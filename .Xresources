@@ -1,0 +1,76 @@
+Xcursor.theme: Bibata-Material-Classic
+Xcursor.size: 22
+
+! ==============================================================================
+! CONFIGURACIÓN GENERAL X11 / DPI
+! ==============================================================================
+Xft.dpi:        96
+Xft.autohint:   0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintslight
+Xft.hinting:    1
+Xft.antialias:  1
+Xft.rgba:       rgb
+
+! ==============================================================================
+! ESQUEMA DE COLORES
+! ==============================================================================
+*background: #141617
+*foreground: #d3c6aa
+*cursorColor: #d3c6aa
+
+! Colors 0-7 (Normal)
+*color0: #475258
+*color1: #e67e80
+*color2: #a7c080
+*color3: #dbbc7f
+*color4: #7fbbb3
+*color5: #d699b6
+*color6: #83c092
+*color7: #d3c6aa
+
+! Colors 8-15 (Bright)
+*color8: #475258
+*color9: #e67e80
+*color10: #a7c080
+*color11: #dbbc7f
+*color12: #7fbbb3
+*color13: #d699b6
+*color14: #83c092
+*color15: #859289
+
+! ==============================================================================
+! TERMINALES BASE (XTerm / Rxvt)
+! ==============================================================================
+*.font: xft:JetBrainsMono Nerd Font:size=10:antialias=true:autohint=true
+
+XTerm*font:            xft:JetBrainsMono Nerd Font:size=10:antialias=true
+XTerm*faceName:        JetBrainsMono Nerd Font
+XTerm*faceSize:        10
+XTerm*renderFont:      true
+XTerm*geometry:        90x25
+XTerm*saveLines:       10000
+XTerm*scrollBar:       false
+XTerm*loginShell:      true
+XTerm*cursorBlink:     true
+XTerm*cursorUnderline: false
+XTerm*charClass:       33:48,37:48,45-47:48,38:48,63:48,160:48
+
+URxvt.font:            xft:JetBrainsMono Nerd Font:size=10:antialias=true
+URxvt.boldFont:        xft:JetBrainsMono Nerd Font:style=Bold:size=10:antialias=true
+URxvt.italicFont:      xft:JetBrainsMono Nerd Font:style=Italic:size=10:antialias=true
+URxvt.depth:           32
+URxvt.scrollBar:       false
+URxvt.saveLines:       10000
+URxvt.iso14755:        false
+URxvt.iso14755_52:     false
+URxvt.cursorBlink:     true
+URxvt.cursorUnderline: false
+URxvt.letterSpace:     0
+
+! ==============================================================================
+! FUENTES DE DIÁLOGOS
+! ==============================================================================
+*Dialog.label.font:    xft:Inter:size=10:medium
+*MenuButton.font:      xft:Inter:size=10:medium
+*Font:                 xft:Inter:size=10

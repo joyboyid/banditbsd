@@ -1,0 +1,41 @@
+return {
+	"folke/which-key.nvim",
+	event = "VeryLazy",
+	opts = {
+		preset = "classic",
+		delay = 400,
+		win = {
+			border = "single",
+			padding = { 0, 1 },
+		},
+		icons = {
+			breadcrumb = ">>",
+			separator = "->",
+			group = "+",
+			mappings = false,
+		},
+		spec = {
+			{
+				mode = { "n", "v" },
+				{ "", group = "tabs" },
+				{ "b", group = "buffer" },
+				{ "c", group = "code" },
+				{ "d", group = "debug" },
+				{ "dp", group = "profiler" },
+				{ "f", group = "file/find" },
+				{ "g", group = "git" },
+				{ "gh", group = "hunks" },
+				{ "q", group = "quit/session" },
+				{ "s", group = "search" },
+				{ "u", group = "ui" },
+				{ "w", group = "windows", proxy = "" },
+				{ "x", group = "diagnostics/quickfix" },
+				{ "[", group = "prev" },
+				{ "]", group = "next" },
+				{ "g", group = "goto" },
+				{ "gs", group = "surround" },
+				{ "z", group = "fold" },
+			},
+		},
+	},
+}

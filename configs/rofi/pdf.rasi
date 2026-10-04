@@ -1,0 +1,79 @@
+@import "themes/colors.rasi"
+
+configuration {
+    font: "JetBrainsMono Nerd Font 12";
+}
+window {
+    transparency:           "real";
+    background-color:       @bg;
+    text-color:             @fg;
+    border:                 2px;
+    border-color:           @fg-alt;
+    width:                  440px;
+    location:               center;
+}
+mainbox {
+    background-color:       transparent;
+    orientation:            vertical;
+    children:               [ "inputbar", "listview" ];
+}
+inputbar {
+    background-color:       @bg-alt;
+    text-color:             @fg;
+    padding:                12px;
+    border:                 0px 0px 3px 0px;
+    border-color:           @fg-alt;
+    children:               [ "prompt", "entry" ];
+}
+prompt {
+    background-color:       transparent;
+    text-color:             @hl;
+    enabled:                true;
+}
+entry {
+    background-color:       transparent;
+    text-color:             @fg;
+    placeholder:            "Search Your Book";
+    placeholder-color:      @fg;
+    cursor:                 text;
+}
+listview {
+    background-color:       transparent;
+    columns:                1;
+    lines:                  6;
+    cycle:                  true;
+    dynamic:                true;
+    scrollbar:              false;
+    layout:                 vertical;
+    spacing:                4px;
+    padding:                6px;
+}
+element {
+    background-color:       transparent;
+    text-color:             @fg;
+    orientation:            horizontal;
+    padding:                10px 12px;
+    border-color:           @fg-alt;
+    cursor:                 pointer;
+}
+element normal.normal {
+    background-color:       transparent;
+    text-color:             @fg;
+}
+element selected.normal {
+    background-color:       @bg-alt;
+    spacing:                12px;
+    border:                 2px;
+    text-color:             @hl;
+}
+element-icon {
+    background-color:       transparent;
+    size:                   24px;
+}
+element-text {
+    background-color:       transparent;
+    text-color:             inherit;
+    cursor:                 inherit;
+    vertical-align:         0.5;
+    horizontal-align:       0.0;
+}

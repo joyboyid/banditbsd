@@ -1,0 +1,1 @@
+/home/null/.config/zsh_plugins/zsh-syntax-highlighting/highlighters/line/../../docs/highlighters/line.md

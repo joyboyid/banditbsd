@@ -1,0 +1,15 @@
+* {
+    background:         #141617;
+    background-alt:     #1e2326;
+    foreground:         #d3c6aa;
+    foreground-alt:     #7a8478;
+    selected:           #a7c080;
+    selected-text:      #141617;
+    accent:             #7fbbb3;
+    urgent:             #e67e80;
+    bg:                 @background;
+    bg-alt:             @background-alt;
+    fg:                 @foreground;
+    fg-alt:             @foreground-alt;
+    hl:                 @selected;
+}
