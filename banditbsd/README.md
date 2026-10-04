@@ -21,8 +21,10 @@ Run the validation-only path from any host:
 ./banditbsd/build-banditbsd.sh --dry-run
 ```
 
-The actual release build must run as root on FreeBSD with `/usr/src/release`
-available. FreeBSD's release tooling produces the standard media; the next
+The actual release build must run as root on FreeBSD. If `/usr/src/release` is
+not available, the builder fetches the `releng/15.1` source tree into
+`/usr/local/src/freebsd-src`. Use `--source-dir=PATH` to select another source
+checkout, or `--no-fetch-source` to require an existing checkout. FreeBSD's release tooling produces the standard media; the next
 release-engineering stage is wiring the staged payload into the bsdinstall
 post-install path so a freshly installed system runs `first-boot.sh` once.
 
