@@ -79,7 +79,8 @@ run cp "$SCRIPT_DIR/packages/"*.txt "$PAYLOAD/packages/"
 run cp -R "$REPO_ROOT/.Xresources" "$REPO_ROOT/.p10k.zsh" "$REPO_ROOT/.tmux.conf" \
     "$REPO_ROOT/.xinitrc" "$REPO_ROOT/.xprofile" "$REPO_ROOT/.zshrc" "$PAYLOAD/dotfiles/"
 run cp -R "$REPO_ROOT/configs" "$REPO_ROOT/local" "$REPO_ROOT/Pictures" "$PAYLOAD/dotfiles/"
-run cp "$SCRIPT_DIR/scripts/configure-system.sh" "$SCRIPT_DIR/scripts/install-dotfiles.sh" "$PAYLOAD/scripts/"
+run cp "$SCRIPT_DIR/scripts/configure-system.sh" "$SCRIPT_DIR/scripts/install-dotfiles.sh" \
+    "$SCRIPT_DIR/scripts/first-boot.sh" "$PAYLOAD/scripts/"
 run chmod +x "$PAYLOAD/scripts/"*.sh
 run install -m 0755 "$PAYLOAD/scripts/first-boot.sh" "$PAYLOAD/first-boot.sh"
 
